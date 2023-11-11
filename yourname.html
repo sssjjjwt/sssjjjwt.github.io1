@@ -5,7 +5,7 @@
     </head>
     <body>
     <center>
-        <h1>이선우 게임</h1>
+        <h1>이원태 게임</h1>
     <input type="button" id="tajaStart" value="종료">
     <input type="checkbox" id="sori">소리끄기<br>
     <input type="button" value="점수">
@@ -18,10 +18,10 @@
     points = 0;
     gameEnd = false;
     dtid = null;
-    jsName = ['이선우','이선우1','이선우2','이선우3','이선우4','이선우5','이선우6','이선우7',
-    '이선우8','이선우9','이선우10','이선우11','이선우12','이선우13','이선우14',]
-    jsAlias = ["바보~", "멍청이~", "띨~ 한놈", "천~치", "얼~간이",
-       "모~질이", "팔~푼이", "둔~한놈", "", "못~난이", "팔~불출"]
+    jsName =['이원태','이원태7','이원태a','이원태p','이원태$','이원태*','이원태1','이원태t','이원태q','이원태.',
+    '이원태<','이원태?','이원태!','이원태123','이원태``','이원태~','이원태@','이원태#','이원태z',]
+    jsAlias = ["똑똑이", "천재", "잘생김", "착함", "멋쟁이"]
+      
     
     function setNewWord() {
       if ( gameEnd )
@@ -30,7 +30,7 @@
       target.value = jsName[k]
       var k = Math.floor(Math.random()*jsAlias.length)
       document.querySelector("#alias").innerHTML = jsAlias[k]
-      rTime.value = 100
+      rTime.value = 50
       dtid = setTimeout(decreaseTime, 1000)
     }
     
