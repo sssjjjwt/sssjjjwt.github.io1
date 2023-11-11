@@ -30,8 +30,8 @@
       target.value = jsName[k]
       var k = Math.floor(Math.random()*jsAlias.length)
       document.querySelector("#alias").innerHTML = jsAlias[k]
-      rTime.value = 50
-      dtid = setTimeout(decreaseTime, 1000)
+      rTime.value = 100
+      dtid = setTimeout(decreaseTime, 300)
     }
     
     function decreaseTime() {
@@ -40,7 +40,7 @@
         setNewWord()
       }
       else
-        dtid = setTimeout(decreaseTime, 1000)
+        dtid = setTimeout(decreaseTime, 300)
     }
     
     function wordCheck(evt) {
